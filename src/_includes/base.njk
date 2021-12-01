@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include "_head.njk" %}  <body>
+    {% block page -%}
+    <div id="page">
+      {{ content | safe }}    </div>
+    {%- endblock %}
+    {{
+      collections.all
+      | eleventyNavigation
+      | eleventyNavigationToHtml({
+          activeAnchorClass: 'nav__current-page',
+          activeKey: eleventyNavigation.key
+        })
+      | addNavAria(page)
+      | safe
+    }}
+    {#
+    {%- include "_footer.njk" -%}
+    #}
+    {% include "_notes.njk" %}  </body>
+</html>

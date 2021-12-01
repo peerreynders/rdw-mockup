@@ -1,0 +1,23 @@
+@use '../settings/colors' as clr;
+
+body {
+  font-size: 100%;
+  font-family: Gill Sans, Helvetica, Arial, sans-serif;
+  border-top: 1em solid clr.$tertiary-dark;
+  color: clr.$dark;
+  line-height: 1.5;
+  background-color: clr.$light;
+}
+
+
+h1,h2,h3,h4,h5,h6 {
+  font-weight: 200;
+}
+
+p {
+  margin: 1em;
+}
+
+nav {
+  clear: both;
+}

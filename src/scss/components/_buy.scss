@@ -1,0 +1,42 @@
+@use '../settings/breakpoints' as bp;
+@use '../settings/colors' as clr;
+
+#buy {
+  box-sizing: border-box;
+  margin-top: -1em;
+
+  @media screen and (min-width: bp.$layout-medium) {
+    float: right;
+    width: 30%;
+  }
+
+  img {
+    -webkit-transform: rotate(3deg);
+    width: 70%;
+    box-shadow: 20px 20px 80px clr.$shadow;
+
+    @media screen and (max-width: bp.$layout-small-max) {
+      position: absolute;
+      top: 5em;
+      right: 1em;
+      width: 5em;
+    }
+  }
+
+  button {
+    display: block;
+    border: none;
+    padding: 1em;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: clr.$x-light;
+    text-align:center;
+    box-shadow: 1px 1px 6px clr.$shadow-dark;
+    background: clr.$primary;
+    margin: .5em 0 0 11em;
+
+    @media screen and (min-width: bp.$layout-medium) {
+      margin: .5em 0 0 0;
+    }
+  }
+}

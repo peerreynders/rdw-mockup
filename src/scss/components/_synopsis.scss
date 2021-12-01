@@ -1,0 +1,27 @@
+@use '../settings/breakpoints' as bp;
+@use '../settings/colors' as clr;
+
+h2 {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 1em;
+}
+
+#synopsis {
+  box-sizing: border-box;
+  padding: 1em;
+
+  @media screen and (min-width: bp.$layout-medium) {
+    padding: 0 3em;
+    float: left;
+    width: 70%;
+  }
+
+  p:first-child {
+    color: clr.$primary;
+
+    &::first-line {
+      text-transform: uppercase;
+    }
+  }
+}

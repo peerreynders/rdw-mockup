@@ -1,0 +1,43 @@
+@use '../settings/colors' as clr;
+
+@mixin remove-element {
+  display: none;
+}
+
+#notes {
+  min-height: 2em;
+  background-color: lightyellow;
+  color: gray;
+  padding: 1em;
+  font: medium/1.5 sans-serif;
+  box-shadow: 1px 1px 6px clr.$shadow-light;
+
+  &::before {
+    content: 'Notes:';
+    display: block;
+    color: black;
+    font-weight: bold;
+    border-bottom: 1px dotted tan;
+  }
+
+  .js-screencapture & {
+    @include remove-element;
+  }
+}
+
+#clear-notes,
+#save-notes {
+  border: none;
+  background-color: black;
+  color: gainsboro;
+
+  &:hover {
+    background-color: dimgray;
+    cursor: pointer;
+  }
+
+  .js-screencapture & {
+    @include remove-element;
+  }
+}
+

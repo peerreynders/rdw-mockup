@@ -1,0 +1,33 @@
+---
+eleventyNavigation:
+  key: Home
+---
+{% extends "template.njk" %}
+
+{% set content %}
+<section id="book-title">
+{% renderTemplateMd %}
+# Responsive Design Workflow
+
+by Stephen Hay
+
+{% endrenderTemplateMd %}
+</section>
+<section id="synopsis">
+{% renderTemplateMd %}
+In our industry everything changes quickly, usually for the better. We have more and more tools for creating websites and applications that work across multiple platforms. Oddly enough, design workflow hasn't changed much, and what has changed id often for worse. Through the years, increasing focus on bloated client deliverables has hurt both content and design, often reducung these disciplines to fill-in-the-blank and color-by-number exercises, respectively. Old-school workflow is simply not effective on our multiplatform web.
+
+## Responsive Design Workflow explores:
+
+- A content-based approach to design workflow that's grounded in our multi-platform reality, not fixed-width Photoshop comps and overproduced wireframes
+- How to avoid being surprised by the realities of multi-platform web sites when practicing responsive web design
+- How to better manage client expectations and development requirements
+- A practical approach for designing in the browser.
+- A method of design documentation that will prove more useful than static Photoshop comps
+{% endrenderTemplateMd %}
+</section>
+<section id="buy">
+  <img src="assets/rdw.jpg" alt="Front Cover of Responsive Design Workflow book by Stephen Hay">
+  <button>Buy the book</button>
+</section>
+{% endset %}

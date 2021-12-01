@@ -1,0 +1,53 @@
+[
+  {
+    "path": "",
+    "views": [
+      {
+        "width": 400,
+        "shots": [
+          {
+            "target": "home0400"
+          }
+        ]
+      },
+      {
+        "width": 599,
+        "shots": [
+          {
+            "target": "home0599"
+          }
+        ]
+      },
+      {
+        "width": 600,
+        "shots": [
+          {
+            "target": "h1",
+            "selector": "h1"
+          }
+        ]
+      },
+      {
+        "width": 1200,
+        "shots": [
+          {
+            "target": "home1200"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "path": "login",
+    "views": [
+      {
+        "width": 400,
+        "shots": [
+          {
+            "target": "login/login"
+          }
+        ]
+      }
+    ]
+  }
+]

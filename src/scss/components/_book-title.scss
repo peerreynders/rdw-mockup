@@ -1,0 +1,36 @@
+@use '../settings/breakpoints' as bp;
+@use '../settings/colors' as clr;
+
+/// extract_h1
+h1 {
+  text-transform: uppercase;
+  color: clr.$secondary;
+  background-color: clr.$mid-dark;
+  margin-top: 0;
+  font-size: 2em;
+  padding: .5em .5em 1em;
+  box-shadow: 0px 10px 50px clr.$shadow-light;
+}
+/// end_h1
+
+h1 + p {
+  color: clr.$tertiary;
+  background-color: clr.$mid;
+  padding: .5em;
+  margin-top: -3em;
+  margin-left: 4em;
+  text-transform: uppercase;
+  width: 50%;
+
+  @media screen {
+    @media (max-width: bp.$layout-small-max) {
+      margin-left: 1em;
+    }
+
+    @media (min-width: bp.$layout-large) {
+      width: 20%;
+    }
+  }
+}
+
+
